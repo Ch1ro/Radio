@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+<style>
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.social-header{
+    width: 15%;
+    height: 10vh;
+    display: flex;
+  
+     justify-content:space-between;
+    align-items:flex-start;
+    flex-direction:column; 
+ 
+}
+.wrap{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: rgb(222,255,0);
+background: linear-gradient(27deg, rgba(222,255,0,1) 25%, rgba(0,255,211,1) 50%, rgba(18,137,255,1) 80%); */
+}
+.trackName{
+    font-size: 28px;
+    font-family: monospace;
+    font-weight: 900;
+    margin-top: 30px;
+}
+.logo{
+    position:absolute;
+height: 65.31px;
+width: 164px;
+left: 100px;
+top: 50px;
+background-image: url(icon_content.jpg);
+
+}
+.inst{
+    position:absolute;
+height: 20px;
+width: 20px;
+left: 300px;
+top: 75px;
+border-radius: 0px;
+background-image: url(instagram.jpg);
+}
+.inst-scr{
+position:absolute;
+height: 20px;
+width: 20px;
+/* left: 30px;
+top: 35px; */
+border-radius: 0px;
+}
+.facebook{
+    position:absolute;
+height: 20px;
+width: 10.5px;
+left: 348px;
+top: 75px;
+border-radius: 0px;
+background-image: url(Vector.jpg);
+
+}
+.rectangle{
+    position:absolute;
+height: 3px;
+width: 1810px;
+left: 50px;
+top: 108px;
+border-radius: 26px;
+background-image: url(rectangle.jpg);
+}
+.record{
+    top: 273px;
+    width: 200px;
+    height: 200px;
+    background-image: url(https://pngimg.com/uploads/vinyl/vinyl_PNG21.png);
+    background-size: cover;
+    background-color: black;
+    border-radius: 50%;
+    border-bottom: 50px;
+    
+}
+.trackNamePlace{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load{
+    position: relative;
+    top: 13px;
+    margin-right: 20px;
+}
+.carousel{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  
+}
+.sponsor{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.partner{
+position: relative;
+width: 100px;
+height: 99px;
+/* top: 700px; */
+right: 830px;
+}
+.row{
+    display: flex;
+}
+.radioLux{
+    position: relative;
+    width: 180px;
+    height: 150px;
+    right: 500px;
+    background-image: url(https://lux.fm/images/logo512.png);
+    background-size: cover;
+    filter: grayscale(1);
+}
+.radioLux:hover{
+    filter: grayscale(0);
+}
+.rozetka{
+    position: relative;
+    width: 180px;
+    height: 150px;
+    right: 250px;
+    background-image: url(rozetka.png);
+    background-size: cover;
+    filter: grayscale(1);
+}
+.rozetka:hover{
+    filter: grayscale(0);
+}
+.v-bet{
+    position: relative;
+    width: 180px;
+    height: 150px;
+    right: 50px;
+    background-image: url(vbet-logo.png);
+    background-size: cover;
+    filter: grayscale(1);
+}
+.v-bet:hover{
+    filter: grayscale(0)
+}
+.radiowave{
+    position: relative;
+    width: 180px;
+    height: 150px;
+    left: 250px;
+    background-image: url(logog.png);
+    background-size: cover;
+    filter: grayscale(1);
+}
+.radiowave:hover{
+    filter: grayscale(0);
+}
+.scrollbar {
+    background-color: white;
+    float: left;
+    height: 100vh;
+    width: 100%;
+       overflow-y: scroll;
+}
+#wrapper {
+  text-align: center;
+  margin: auto;
+}
+.force-overflow {
+ height: 100vh;
+ width: 100%;
+min-height: 1800px;
+min-width: 100%;
+}
+#style-2::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+	 border-radius: 10px;
+
+	background-color: red;
+}
+
+#style-2::-webkit-scrollbar-track {
+
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+</style>
+
+</head>
+<body>
+    
+    
+       
+        <div class="scrollbar"id="style-2">
+            <div class="force-overflow">
+                <div class="social-header">
+                    <div class="logo" id="logo"></div>
+                    <div class="inst"><a href="https://www.instagram.com/max_troniak/" class="inst-scr"></a></div>
+                    <div class="facebook"></div>
+                    <div class="rectangle"></div>
+                </div>
+                <div class="wrap">
+                    
+            <div class="record" id="record"></div>
+            
+             <div id='rbcloud_mplayer15099'></div>
+            
+            <div class="trackNamePlace">
+                <div class="spinner-grow text-danger load" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                    <div id='rbcloud_nowplaying12204' class="trackName"></div>
+            </div>
+                <script src='https://c28.radioboss.fm/w/nowplaying.js?u=346&amp;wid=12204&amp;nl=1&amp;nnt=1'></script>
+                <script src='https://c28.radioboss.fm/w/mplayer.js?u=https%3A%2F%2Fc28.radioboss.fm%3A18346%2Fstream&amp;wid=15099&amp;pw=82&amp;ca=%23111111&amp;cg=%23b3b3b3'></script>
+                <div class="sponsor">
+                    <div class="row">
+                
+                        <div class="radioLux"></div>
+                        <div class="rozetka"></div>
+                        <div class="v-bet"></div>
+                        <div class="radiowave"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="d0 (93).JPG" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="DSC_4458.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="DSC_4412.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="DSC_6384.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  
+                
+            </div>
+        </div> 
+   
+    <script>
+let obert = 0;
+setInterval(function(){
+   obert++;
+    record.style.transform = 'rotate(' + obert + 'deg)';
+}, 10);
+ 
+
+
+    </script>
+</body>
+</html>
